@@ -20,6 +20,8 @@ cli으로 올리는 방법을 사용하도록 익숙해지기!!
 ls : 현재 위치의 파일명들 보여줌
 ls -al : 현재 위치의 파일명들 보여줌 (숨겨진 파일까지 모두)
 clear : cli에 적힌 내용 지우기
+cd : change dir
+mkdir : make dir
 
 ### 방법 ###
 1. 깃헙에 로그인
@@ -32,7 +34,9 @@ clear : cli에 적힌 내용 지우기
 5. git add README.md를 통해 첫번째 승인
 - 빨간색 글씨 : 수정된 부분(승인X), 초록색 글씨 : 수정된 부분(첫번째 승인완료)
 6. git commit README.md를 통해 최종 승인
-
+7. i(insert) 누르고 esc를 누른 후, commit 제목 적음
+8. :wq를 통해 수정 완료
+9. git push origin main을 누르면 깃헙 올리기 끝!!
 
 
 ### 관련 용어들 정리 ###
