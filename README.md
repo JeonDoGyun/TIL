@@ -23,6 +23,26 @@ clear : cli에 적힌 내용 지우기
 cd : change dir
 mkdir : make dir
 
+### git 추가(1) ###
+commit을 했는데 잔디 심기가 안될 때 -> email, name 확인
+git config --list : 현재 내 repository에 대한 정보 열람
+git config user.name "Git에 저장된 이름" : user.name 설정
+git config user.email "Git에 저장된 메일" : user.email 설정
+global 사용하면 매번 등록할 필요없이 컴퓨터 root에 저장됨
+
+git log : 최근 변경한 사항들 볼 수 있음
+git log -2 : 최근 변경한 2개의 사항들을 볼 수 있음
+
+git branch : 새 나뭇가지 만들기 (분기점)
+git checkout develop : develop이라는 branch로 위치를 넘김.
+git commit -m "파일 제목" : "파일 제목"을 커밋
+touch : 파일 만들기
+
+#### branch에서 일어난 일을 main에 넘어가는 법
+git branch develop : develop 분기점 생성
+git checkout main : main으로 넘어감
+git merge develop : develop에서 한 작업들이 main에도 추가
+
 ### 방법 ###
 1. 깃헙에 로그인
 2. new repository를 만들어서 내가 저장할 공간 확보
@@ -53,5 +73,3 @@ personal access token : 깃헙 올릴 때 password 대신 복사해서 사용하
 notion : 내가 공부하면서 필기한 내용을 정리하도록
 app 1개 배포 : apple에 내가 배포한 앱이 거절되면 고치는 과정을 통해서 경험 쌓기
 개발 블로그 활용
-
-Git test
