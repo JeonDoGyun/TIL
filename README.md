@@ -53,3 +53,5 @@ personal access token : 깃헙 올릴 때 password 대신 복사해서 사용하
 notion : 내가 공부하면서 필기한 내용을 정리하도록
 app 1개 배포 : apple에 내가 배포한 앱이 거절되면 고치는 과정을 통해서 경험 쌓기
 개발 블로그 활용
+
+Git Test
