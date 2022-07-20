@@ -112,8 +112,37 @@ let net = Network(rawValue: 3)
 print(net) // <- case가 없는 값은 nil로 출력됨.
 
 /*
- 클래스와 구조체 중 선택할 때
-기본적으로 구조체
-참조 -> 클래스 : 실제로 클래스 사용하는 경우가 많음.
- swift는 값 타입인게 많음.
+class와 struct 중 선택할 때
+기본적으로 struct를 쓰지만 참조를 해야될 때 클래스 사용 : 실제로 클래스 사용하는 경우가 더 많음.
+swift는 값 타입인게 많아서 class가 더 자주 쓰임. 
 */
+
+/*
+Access Control : 접근제어
+internal : default 값인데 평소에 숨어있음. 파일 밖에서도 사용 가능.
+private : private을 적은 블록 안에서만 사용 가능.
+자동완성에서 필요한 것만 검색되도록 꺼내쓸 수 있는게 이점.
+밖에서 바꾸지 못하게 막을 수 있음. 변경되지 못하도록. 보안성
+fileprivate : 적은 파일 내에서 사용할 수 있음.
+*/
+
+class Person {
+    private let name: String
+    private let age: Int
+    
+    fileprivate var info: Int = 1
+    
+    // var info: Int = 1 // 개발자들 사이에서 var로 적혀있으니 밖에서 써도 된다는 의미를 내포.
+    
+    var officialAge: Int {
+        return age
+    }
+    
+    init(name: String, age: Int){
+        self.name = name
+        self.age = age
+    }
+}
+
+let person = Person(name: "AAA", age: 12) // 인스턴스화 : 객체를 만드는 행위
+print(person.officialAge)
