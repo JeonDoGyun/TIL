@@ -26,14 +26,14 @@ Markdown은 텍스트기반의 마크업 언어.
 제목, 부제목을 적을 때 '#' 기호를 이용해 사용.
 H1~H6까지 지원하고 H7부터는 지원하지 않는다.
 
-'''
+```
 # This is a H1
 ## THis is a H2
 ### This is a H3
 #### This is a H4
 ##### This is a H5
 ###### This is a H6
-'''
+```
 
 # This is a H1
 ## THis is a H2
