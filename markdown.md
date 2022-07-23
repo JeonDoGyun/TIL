@@ -115,11 +115,13 @@ end code block.
 ```
 
 This is a normal paragraph: 
+
     This is a code block.
+
 end code block.
 
 #### 코드 블럭
-1. ```<pre><code>{코드 내용}</code></pre>"``` 사용
+1. ```<pre><code>{코드 내용}</code></pre>``` 사용
 
 ```
 <pre>
@@ -142,17 +144,17 @@ public class BootSpringBootApplication {
 </code>
 </pre>
 
-2. \``` 사용
-적은 코드를 텍스트 형태로 나타내기 위해 \```을 사용. 
-깃헙에서는 ``` 시작점에 사용하는 언어를 선언하여 문법강조가 가능하다. 
+2. \``` 사용 <br>
+코드 내용을 텍스트 형태로 나타내기 위해 \```을 사용. 
+깃헙에서는 \``` 시작점에 사용하는 언어를 선언하여 문법강조가 가능하다. 
 
 ```
-```swift
+\```swift
 let numDict: [String: Int] = ["A": 1, "B": 2, "C": 3]
 for key in numDict.keys{ 
     print(key)
 }
-```
+\```
 ```
 
 ```swift
