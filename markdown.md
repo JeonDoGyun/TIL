@@ -48,16 +48,114 @@ H1~H6까지 지원하고 H7부터는 지원하지 않는다.
 다른 출처로부터 인용된 블록을 정의할 때 사용. 
 인용된 블록은 들여쓰기로 표현된다. 
 </p>
-
+```
+> This is a first blockquote.
+>   > This is a second blockquote.
+>   >   > - This is a third blockquote. / 인용 블록 안에서 다른 마크다운 요소를 포함할 수 있다. 
+```
 > This is a first blockquote.
 >   > This is a second blockquote.
 >   >   > - This is a third blockquote. / 인용 블록 안에서 다른 마크다운 요소를 포함할 수 있다. 
 
 ### 목록
 #### 순서가 있는 목록 (Ordered list)
-숫자와 점을 사용
+숫자와 점을 사용. 순서는 항상 내림차순으로 정의된다. 
+```
+1. 첫번째
+2. 두번째
+3. 세번째
+```
 1. 첫번째
 2. 두번째
 3. 세번째
 
 #### 순서가 없는 목록 (Unorderer list)
+<p>
+글머리 기호를 사용. 
+*는 색이 채워진 원형 기호
++는 색이 없는 원형 기호
+-는 색이 채워진 사각형 기호
+기호를 혼합해서 사용하는 것도 가능하다. 
+</p>
+```
+* 빨강
+    * 초록
+        * 파랑
++ 빨강
+    + 초록
+        + 파랑
+- 빨강
+    - 초록
+        - 파랑
+* 빨강
+    + 초록
+        - 파랑
+```
+* 빨강
+    * 초록
+        * 파랑
++ 빨강
+    + 초록
+        + 파랑
+- 빨강
+    - 초록
+        - 파랑
+* 빨강
+    + 초록
+        - 파랑
+
+### 코드 내용 기재
+#### 들여쓰기
+4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면 코드블럭이 되고, 들여쓰지 않은 행을 만나면 끝남. 
+```
+This is a normal paragraph: 
+    This is a code block.
+end code block.
+
+```
+This is a normal paragraph: 
+    This is a code block.
+end code block.
+
+#### 코드 블럭
+1. <pre><code>{코드 내용}</code></pre> 사용
+```
+<pre>
+<code>
+public class BootSpringBootApplication {
+    public static void main(String[] args) {
+        System.println("Hello, world");
+    }
+}
+</code>
+</pre>
+```
+<pre>
+<code>
+public class BootSpringBootApplication {
+    public static void main(String[] args) {
+        System.println("Hello, world");
+    }
+}
+</code>
+</pre>
+
+2. ``` 사용
+적은 코드를 텍스트 형태로 나타내기 위해 ```을 사용. 
+깃헙에서는 ``` 시작점에 사용하는 언어를 선언하여 문법강조가 가능하다. 
+
+```
+```swift
+let numDict: [String: Int] = ["A": 1, "B": 2, "C": 3]
+for key in numDict.keys{ 
+    print(key)
+}
+```
+```
+
+```swift
+let numDict: [String: Int] = ["A": 1, "B": 2, "C": 3]
+for key in numDict.keys{ 
+    print(key)
+}
+```
