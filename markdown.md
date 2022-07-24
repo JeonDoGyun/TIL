@@ -163,3 +163,103 @@ for key in numDict.keys{
     print(key)
 }
 ```
+
+### 수평선 <hr/>
+페이지를 나누는 용도로 사용
+```
+* * *
+
+***
+
+*****
+
+- - -
+
+-------------------
+```
+
+* * *
+
+***
+
+*****
+
+- - -
+
+-------------------
+
+### 링크
+#### URL 직접입력
+삽입하고 싶은 링크의 http 혹은 https를 포함한 URL 전부를 입력.
+```
+https://google.com
+<https://google.com>
+```
+https://google.com
+<https://google.com>
+
+#### 텍스트에 링크 삽입
+```
+구글 홈페이지를 가려면, [여기](https://google.com)를 클릭하세요.
+```
+구글 홈페이지를 가려면, [여기](https://google.com)를 클릭하세요.
+
+#### 링크에 title 추가
+링크에 마우스 커서를 올리면 부가적인 설명을 추가할 수 있음.
+```
+[google 홈페이지 바로가기](https://google.com "홈페이지입니다. ")
+```
+[google 홈페이지 바로가기](https://google.com "홈페이지입니다. ")
+
+#### 참조 링크
+같은 링크 URL을 여러번 입력해야하거나 글 안의 링크를 따로 관리하고 싶을 때 사용. <br>
+링크를 ```[참조링크 텍스트]: 참조링크_URL```의 형태로 입력하고 삽입하고자 하는 부분에 ```[참조링크 텍스트]```를 입력하는 방식
+```
+[구글 홈페이지][참조 링크1]
+
+문장 안에서도 [참조 링크1]을 사용할 수 있음.
+[참조 링크2]에 부가적인 설명을 추가할 수 있음.
+
+[참조 링크1]: https://google.com
+[참조 링크2]: https://naver.com "네이버 홈페이지입니다."
+```
+[구글 홈페이지][참조 링크1]
+
+문장 안에서도 [참조 링크1]을 사용할 수 있음.
+[참조 링크2]에 부가적인 설명을 추가할 수 있음.
+
+[참조 링크1]: https://google.com
+[참조 링크2]: https://naver.com "네이버 홈페이지입니다."
+
+#### 이미지에 링크 삽입
+```[![이미지설명(이미지 소스 URL)]](링크 URL)```과 같은 형식으로 입력
+```
+[![Google 로고](https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png)](https://google.com)
+```
+[![Google 로고](https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png)](https://google.com)
+클릭하면 LYNMP 홈페이지로 이동.
+- 사이즈 조절
+```
+<img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="Google"></img>
+```
+사이즈 조절 기능이 없기 때문에 이렇게 조절한다. 
+
+### 텍스트 강조
+```
+**double asterisks** : 굵은 글씨체
+__double underscores__ : 굵은 글씨체
+~~cancelline~~ : 취소선
+```
+**double asterisks** : 굵은 글씨체
+__double underscores__ : 굵은 글씨체
+~~cancelline~~ : 취소선
+
+문장 중간에 사용할 경우에는 띄어쓰기를 사용해야 되고, 그러지 않을 경우 실행되지 않을 수도 있음.
+
+### 줄바꿈
+3칸 이상 띄어쓰기를 하면 줄이 바뀜.
+```줄   바꾸기```
+줄   바꾸기
+
+### 참고 문서
+[https://gist.github.com/ihoneymon/652be052a0727ad59601](ihoneymon님의 github)
