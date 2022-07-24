@@ -20,6 +20,8 @@ Markdown은 텍스트기반의 마크업 언어.
 1. 표준이 없고 도구에 따라서 변환방식이나 생성물이 다를 수 있다.
 2. 모든 HTML 마크업을 대신하지는 못한다. 
 
+-----------
+
 ## 문법
 ### 헤더(Headers)
 글머리. <br>
@@ -42,6 +44,8 @@ H1~H6까지 지원하고 H7부터는 지원하지 않는다.
 ##### This is a H5
 ###### This is a H6
 
+-----------
+
 ### BlockQuote
 <p>
 이메일에서 사용하는 블록인용문자를 이용한다. 
@@ -56,6 +60,8 @@ H1~H6까지 지원하고 H7부터는 지원하지 않는다.
 > This is a first blockquote.
 >   > This is a second blockquote.
 >   >   > - This is a third blockquote. / 인용 블록 안에서 다른 마크다운 요소를 포함할 수 있다. 
+
+-----------
 
 ### 목록
 #### 순서가 있는 목록 (Ordered list)
@@ -104,6 +110,8 @@ H1~H6까지 지원하고 H7부터는 지원하지 않는다.
 * 빨강
     + 초록
         - 파랑
+
+-----------
 
 ### 코드 내용 기재
 #### 들여쓰기
@@ -195,8 +203,10 @@ for key in numDict.keys{
 https://google.com
 <https://google.com>
 ```
-https://google.com
+https://google.com   
 <https://google.com>
+
+-----------
 
 #### 텍스트에 링크 삽입
 ```
@@ -204,12 +214,16 @@ https://google.com
 ```
 구글 홈페이지를 가려면, [여기](https://google.com)를 클릭하세요.
 
+-----------
+
 #### 링크에 title 추가
 링크에 마우스 커서를 올리면 부가적인 설명을 추가할 수 있음.
 ```
-[google 홈페이지 바로가기](https://google.com "홈페이지입니다. ")
+[google 홈페이지 바로가기](https://google.com "구글 홈페이지입니다. ")
 ```
-[google 홈페이지 바로가기](https://google.com "홈페이지입니다. ")
+[google 홈페이지 바로가기](https://google.com "구글 홈페이지입니다. ")
+
+-----------
 
 #### 참조 링크
 같은 링크 URL을 여러번 입력해야하거나 글 안의 링크를 따로 관리하고 싶을 때 사용. <br>
@@ -231,18 +245,23 @@ https://google.com
 [참조 링크1]: https://google.com
 [참조 링크2]: https://naver.com "네이버 홈페이지입니다."
 
+-----------
+
 #### 이미지에 링크 삽입
 ```[![이미지설명(이미지 소스 URL)]](링크 URL)```과 같은 형식으로 입력
 ```
 [![Google 로고](https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png)](https://google.com)
 ```
 [![Google 로고](https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png)](https://google.com)
-클릭하면 LYNMP 홈페이지로 이동.
+클릭하면 Google 홈페이지로 이동.
+
 - 사이즈 조절
 ```
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="Google"></img>
 ```
 사이즈 조절 기능이 없기 때문에 이렇게 조절한다. 
+
+-----------
 
 ### 텍스트 강조
 ```
@@ -256,10 +275,14 @@ __double underscores__ : 굵은 글씨체
 
 문장 중간에 사용할 경우에는 띄어쓰기를 사용해야 되고, 그러지 않을 경우 실행되지 않을 수도 있음.
 
+-----------
+
 ### 줄바꿈
 3칸 이상 띄어쓰기를 하면 줄이 바뀜.
 ```줄   바꾸기```
 줄   바꾸기
+
+-----------
 
 ### 참고 문서
 [https://gist.github.com/ihoneymon/652be052a0727ad59601](ihoneymon님의 github)
